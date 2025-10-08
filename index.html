@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicacion Suma</title>
 </head>
-
 <body>
     <h1>Aplicacion Calculadora</h1>
-
-    <script src="javascript/suma.js"></script>
     <!--Formulario de ingreso-->
     <div>
         <form action="" method="get">
-
             <div>
                 <label for="numero1">Ingrese el número 1:</label>
 
                 <input type="number" id="numero1" name="numero1" required>
             </div>
-            <br>
-
-            <div>
-                <label for="operacion">Seleccione la operación:</label>
-                <input type="text" id="operacion" name="operacion">
-            </div>
-
             <div>
                 <label for="numero2">Ingrese el número 2:</label>
                 <input type="number" id="numero2" name="numero2" required>
             </div>
-            <br>
             <div>
-                <input type="button" value="Enviar" onclick="sumar()" >
+                <label for="operacion">Ingrese la operación:</label>
+                <input type="text" id="operacion" name="operacion">
             </div>
-
+            <div>
+                <input type="button" value="Enviar" onclick="calcular()">
+            </div>
         </form>
+        <script src="javascript/suma.js"></script>
 
 </body>
 
